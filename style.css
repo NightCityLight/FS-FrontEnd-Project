@@ -619,7 +619,7 @@ p{
     color: black;
     background-color: white;
     cursor: pointer;
-    border: 1px solid navy;
+    border:0.5px solid navy;
 }
 
 #review{
@@ -712,3 +712,155 @@ transition: 0.15s ease-in-out ;
     background-image: url(images/cat-women-600x600.jpg);
 }
 
+
+#finalsection{
+
+    text-align: center;
+    margin-top: 7vh;
+    background-color: #faedeb;
+    padding-top:7vh ;
+}
+
+#finalsection .uppersection{
+
+    padding-bottom: 6vh;
+}
+
+#finalsection .uppersection h2{
+
+    font-size: 2.5vw;
+}
+
+#finalsection .uppersection h3{
+
+    padding-bottom: 5vh;
+    font-size: 2.5vw;
+}
+
+
+#finalsection .uppersection p{
+
+    font-size: 1vw;
+    font-weight: 300;
+    color: #6e7275;
+}
+
+#finalsection .register{
+
+    padding-bottom: 10vh;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    
+}
+
+#finalsection .register input{
+
+        height: 5.7vh;
+        padding: 0 1.7vh;
+        font-size: 16px;
+        font-weight: 600;
+        width: 30vw;
+        border: 1px solid transparent;
+        border-radius: 7px;
+        outline: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: #fafafa;
+        
+
+}
+
+#finalsection .register button{
+    
+    font-size: 15px;
+    font-weight: 600;
+    padding: 1.6vh 2.5vw;
+    color: white;
+    background-color: black;
+    white-space: nowrap;
+    border-radius: 4px;
+    border: none;
+    outline: None;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+#finalsection .register button:hover{
+
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border:0.9px solid black;
+}
+
+#finalsection .lowerpart ul{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 5vh;
+    
+}
+
+#finalsection .lowerpart li{
+
+    list-style: none;
+    
+ 
+}
+
+#finalsection .lowerpart a{
+
+    text-decoration: none;
+    font-size: 0.9vw;
+    font-weight: 300;
+    color: #465b52;
+    transition: 0.17s ease-in-out;
+    
+}
+
+#finalsection .lowerpart a:hover /*,
+#nav li a.current*/{
+     /* color: rgb(63, 153, 144);  */
+     color: grey;
+     opacity: 0.5;
+     
+     
+}
+
+#finalsection .followus{
+
+    padding-bottom: 10vh;
+    padding-top: 3vh;
+}
+
+#finalsection .followus i{
+
+    font-size: 2vw;
+    color: black;
+    border: solid 2px black;
+    background-color: white;
+
+padding: 0.5vh ;
+     
+}
+
+
+#finalsection .copyrt{
+
+    background-color: black;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    margin-bottom: 7vh;
+}
+
+#finalsection .copyrt h3{
+
+    font-size: 1vw;
+    font-weight: 300;
+    color: white;
+
+}
