@@ -24,3 +24,40 @@ closeIcon.addEventListener('click',()=>{
 });
 
 
+let themeToggler = document.querySelector('.theme-toggler');
+
+themeToggler.onclick = ()=>{
+
+    themeToggler.classList.toggle('active');
+
+    if(themeToggler.classList.contains('active')){
+
+        document.body.classList.add('active');
+
+    }else{
+        document.body.classList.remove('active');
+    }
+}
+
+document.querySelectorAll('.theme-colors .colors').forEach(colors =>{
+
+   colors.onclick = () => {
+    let background = colors.style.background;
+    document.querySelector(':root').style.setProperty('--main-color', background);
+   }
+});
+
+// let theme = document.querySelector('themes-container');
+
+// document.querySelector('#customizer').onclick = ()=> {
+
+//     theme.classList.add('active');
+//     document.body.classList.paddingRight = '350px';
+// }
+
+// document.querySelector('#theme-close').onclick = ()=> {
+
+//     theme.classList.remove('active');
+//     document.body.classList.paddingRight = '0px';
+// }
+
