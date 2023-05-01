@@ -11,6 +11,7 @@
 </head>
 <body>
 
+    <button id="customizer">Customize</button>
     
     <section id="head">
        
@@ -20,17 +21,34 @@
             <li> <a href=""> MEN</a></li>
             <li> <a href=""> ABOUT</a></li>
             <li> <a href=""> CONTACT</a></li>
+            <div class="logo">
+                <a href="#"><img src="images\logomain.png" alt="Logo"></a>
+            </div>
 
          </ul>
-        <div id="logo">
-            <a href="#"><img src="images\logomain.png" alt="Logo"></a>
-        </div>
+       
 
     
             <ul id ="nav2">
-                <li> <a href=""> S</a></li>
-                <li> <a href=""> P</a></li>
-                <li> <a href=""> C</a></li>
+                <li> 
+                <div class="search-input-wrapper">
+                    <div class="search-input">
+                        <input type="text" placeholder="Search">
+                        <i class="fa-solid fa-rectangle-xmark"></i>
+                    </div>
+                </div>
+
+                <div class="search-icon">
+
+                    <i class="fas fa-search"></i>
+
+                </div>
+
+                    </li>
+                
+               
+                <li> <a href=""> 0.00$</a></li>
+                <li> <a href=""> <i class="fa-solid fa-cart-shopping"></i></a></li>
                 <li> <a href=""> LOG IN</a></li>
     
              </ul>
@@ -160,6 +178,71 @@
 
 
 </section>
+
+<section id = "summercollection" class="sectionpadding3">
+    <h4>SUMMER COLLECTION</h4>
+    <h2>ON Sale T-shirts</h2>
+    <div class = "container1">
+        <div class ="products">
+            <img src="images\product-09-a-600x731 (1).jpg" alt="p1">
+            <img src="images\product-01-c-600x731.jpg" class="img-top" alt="p1,overlay">
+            <div class="description">
+                <span>MEN</span>
+                <h4>T-Shirt Name 10</h4>
+                <h5>33.00 – 36.00</h5>
+            </div>
+            <ul>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping cart "></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-eye quickview tooltip"><span class="tooltiptext">Quick view</span></i></a></li>
+        </ul>
+        </div>
+        
+        <div class ="products">
+            <img src="images\product-06-a-600x731.jpg" alt="p1">
+            <img src="images\product-01-d-600x731.jpg" class="img-top" alt="p1,overlay">
+            <div class="description">
+                <span>MEN</span>
+                <h4>T-Shirt Name 10</h4>
+                <h5>33.00 – 36.00</h5>
+            </div>
+            <ul>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping cart "></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-eye quickview tooltip"><span class="tooltiptext">Quick view</span></i></a></li>
+        </ul>
+        </div>
+        <div class ="products">
+            <img src="images\product-10-a-600x731 (1).jpg" alt="p1">
+            <img src="images\product-01-d-600x731.jpg" class="img-top" alt="p1,overlay">
+            <div class="description">
+                <span>MEN</span>
+                <h4>T-Shirt Name 10</h4>
+                <h5>33.00 – 36.00</h5>
+            </div>
+            <ul>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping cart "></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-eye quickview tooltip"><span class="tooltiptext">Quick view</span></i></a></li>
+        </ul>
+        </div>
+        <div class ="products">
+            <img src="images\product-05-a-600x731.jpg" alt="p1">
+            <img src="images\product-001-b-600x731 (1).jpg" class="img-top" alt="p1,overlay">
+            <div class="description">
+                <span>MEN</span>
+                <h4>T-Shirt Name 10</h4>
+                <h5>33.00 – 36.00</h5>
+            </div>
+            <ul>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping cart "></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-eye quickview tooltip"><span class="tooltiptext">Quick view</span></i></a></li>
+        </ul>
+        </div>
+        
+
+
+    </div>
+
+
+</section>
     
 <section id = "review" class="sectionpadding1">
     <h2>REVIEWS</h2>
@@ -204,7 +287,7 @@
     </div>
 
     <div class="register">
-        <input type="text" placeholder="your email address...">
+        <input type="email" placeholder="your email address..." pattern=".+@email\.com" required>
         <button>Sign Up</button>
         
     </div>

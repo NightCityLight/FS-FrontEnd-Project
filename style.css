@@ -72,16 +72,49 @@ p{
     position: sticky;
     top: 0;
     left: 0;
+    
     background-color: rgb(253, 253, 253);
     
 }
 
+#customizer{
+
+
+
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 0.7vh 0.2vw;
+    margin-top: 2vh;
+    color: black;
+    background-color: rgb(250, 248, 248);
+    z-index: 1000;
+    cursor: pointer;
+    position: fixed;
+    right: -0.5vw;
+    top: 35vh;
+    transition: 0.15s ease-in-out;
+    
+    
+}
+
+#customizer:hover{
+
+    padding: 0.7vh 0.2vw;
+    color: blue;
+    background-color: black(250, 248, 248);
+    font-size: 1.2vw;
+    font-weight: 700;
+    box-shadow: 0 1vh 2.3vw rgba(0, 0, 0, 0.08);
+    
+    
+    
+}
 
 
 #nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   
 }
 
@@ -120,7 +153,9 @@ p{
 #nav2{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    
     
 }
 
@@ -129,7 +164,7 @@ p{
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 
     
 
 }
@@ -155,9 +190,9 @@ p{
 
 
 
-#logo{
+#nav .logo{
 
-    padding-right: 18%;
+    padding-left: 8vw;
     transition: 0.17s ease-in-out;
     
 
@@ -516,7 +551,7 @@ p{
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-position: fixed;
+    background-attachment: fixed;
     margin-bottom: 10vh;
     
     
@@ -624,7 +659,7 @@ p{
 
 #review{
     text-align: center;
-    margin-top: 5vh;
+
     
 }
 
@@ -864,3 +899,103 @@ padding: 0.5vh ;
     color: white;
 
 }
+
+
+#nav2 .search-input-wrapper{
+
+    width:100%;
+    height: 3.8vw;
+    background-color: rgba(243, 189, 153, 0.5);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.15s ;
+}
+
+
+#nav2 .search-input-wrapper.change{
+
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s 0.3s;
+}
+
+
+#nav2 .search-input{
+
+    width:19rem;
+    display: flex;
+    align-items: center;
+}
+
+#nav2 .search-input input{
+
+    width: 20vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1vw solid#999;
+    font-size: 1.38vw;
+    letter-spacing: 0.12vw;
+    outline: none;
+    color: #555;
+    
+
+}
+
+#nav2 .search-input i{
+
+    font-size: 3.2vw;
+    color: #a85353;
+    cursor: pointer;
+}
+
+
+#nav2 .search-icon{
+
+    font-size: 1.4vw;
+    position: absolute;
+    top: 2.3vw;
+   /* left: 50.8rem;*/
+    right:15vw;
+    
+}
+
+
+#nav2 .search-icon.change{
+
+    animation: searchIconAnim 0.5s forwards;
+
+
+}
+
+#nav2 .search-icon i{
+
+    color: #999;
+    cursor: pointer;
+}
+
+
+@keyframes searchIconAnim{
+
+    0%{
+        top: 2.3vw;
+    }
+
+    40%{
+        top:40%;
+        font-size: 2.5vw;
+    }
+
+    60%{
+        top: 40%;
+        left: 50.8vw;
+    }
+
+    100%{
+        top: 2.3vw;
+        left: 54.75vw;
+    }
+}
+
