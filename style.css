@@ -100,7 +100,7 @@ p{
     
 }
 
-#customizer{
+#bar{
 
 
 
@@ -114,13 +114,14 @@ p{
     cursor: pointer;
     position: fixed;
     /*right: -0.5vw;*/
-    top: 35vh;
+    top:75vh;
+    right: 0.1vw;
     transition: 0.15s ease-in-out;
     
     
 }
 
-#customizer:hover{
+#bar:hover{
 
     padding: 0.7vh 0.2vw;
     color: blue;
@@ -1028,17 +1029,24 @@ padding: 0.5vh ;
 .themes-container{
 
     position:fixed;
-    top:0; right:0;
+    top:0; right:-350px;
     background:var(--bg);
     border-left:var(--border);
     height: 100vh;
     width:350px;
-    z-index:1001;
+    z-index:1002;
     text-align: right;
     padding: 20px;
+    transition: 0.3s;
+   
 }
 
-.themes-container #theme-close{
+.themes-container.active{
+
+    right: 0px;
+}
+
+.themes-container #theme-off{
 
     font-size: 40px;
     color:var(--black);
@@ -1121,4 +1129,47 @@ padding: 0.5vh ;
 .themes-container .theme-colors .colors:hover{
 
     opacity: 0.5;
+}
+
+
+/*media query*/
+
+@media (max-width:799px)
+
+{
+body{
+    width: 50vh;
+}
+#bigbanner{
+    background-image: url("images/hero-bg.png");
+    background-size: 73vh;
+    height: 40vh;
+    background-color: #faedeb;
+    background-repeat: no-repeat;
+    background-position-x: 47.5vw;
+    background-position-y: 0vh;
+    position: relative;
+    padding: 0 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+   
+    
+   
+}
+
+#choice .rightban{
+
+    background-image: url(images/cat-men-600x600.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 30vh;
+    background-size: cover;
+    position: center;
+    padding: 1vw;
+}
 }

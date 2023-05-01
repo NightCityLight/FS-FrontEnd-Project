@@ -47,7 +47,31 @@ document.querySelectorAll('.theme-colors .colors').forEach(colors =>{
    }
 });
 
-// let theme = document.querySelector('themes-container');
+
+const menuButton = document.getElementById('bar');
+const cusmenu = document.getElementsByClassName('themes-container');
+const closeIt = document.getElementById('theme-off');
+
+if(menuButton) { bar.addEventListener('click', () => {
+
+        themes-container.classList.add('active');
+    }) 
+}
+
+if(closeIt) {
+
+    theme-off.addEventListener('click', ()=> {
+
+        themes-container.classList.remove('active')
+        
+    })
+}
+
+
+
+//let theme = document.querySelector('themes-container');
+
+
 
 // document.querySelector('#customizer').onclick = ()=> {
 
